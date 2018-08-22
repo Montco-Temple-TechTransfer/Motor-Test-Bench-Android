@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bluetootharduino.MainActivity">
+
+    <TextView
+        android:id="@+id/textPulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textLift"
+        app:layout_constraintStart_toStartOf="@+id/textLift" />
+
+    <TextView
+        android:id="@+id/textVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textLift"
+        app:layout_constraintStart_toStartOf="@+id/textLift" />
+
+    <TextView
+        android:id="@+id/textCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textLift"
+        app:layout_constraintStart_toStartOf="@+id/textLift" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:layout_marginStart="16dp"
+        android:text="Pulse msec:"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:layout_marginStart="16dp"
+        android:text="Voltage V:"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="16dp"
+        android:text="Current A:"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textEff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="26dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textEff"
+        app:layout_constraintStart_toStartOf="@+id/textEff" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ambient Temp C:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textAmbient"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Motor Temp C:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:text="Lift kg:"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Eff kg/watt:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="16dp"
+        android:text="Power W:"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textLift"
+        app:layout_constraintStart_toStartOf="@+id/textLift" />
+
+    <TextView
+        android:id="@+id/textLift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textAmbient"
+        app:layout_constraintStart_toStartOf="@+id/textAmbient" />
+
+    <TextView
+        android:id="@+id/textAmbient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textMotor"
+        app:layout_constraintStart_toStartOf="@+id/textMotor" />
+
+    <Button
+        android:id="@+id/msUp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:onClick="incrementDutyCycle"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <Button
+        android:id="@+id/msDown_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="decrementDutyCycle"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/msUp_id"
+        app:layout_constraintTop_toBottomOf="@+id/msUp_id" />
+
+    <Button
+        android:id="@+id/connect_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:onClick="startScan"
+        android:text="Connect"
+        app:layout_constraintBaseline_toBaselineOf="@+id/msDown_id"
+        app:layout_constraintStart_toEndOf="@+id/msDown_id" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="Pulse Width:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pulseWidth_id"
+        app:layout_constraintStart_toEndOf="@+id/msUp_id" />
+
+    <TextView
+        android:id="@+id/pulseWidth_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:onClick="toggleCapture"
+        android:text="Start Capture"
+        app:layout_constraintStart_toStartOf="@+id/msDown_id"
+        app:layout_constraintTop_toBottomOf="@+id/msDown_id" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="exportData"
+        android:text="export"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+</android.support.constraint.ConstraintLayout>
